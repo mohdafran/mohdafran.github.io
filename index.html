@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afran Profolio</title><!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet"><!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/style.css"><!-- Favicon -->
+    <!-- Elements SDK -->
+    <script src="/_sdk/element_sdk.js"></script>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+    <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+</head>
+
+<body class="h-full">
+    <div class="app-wrapper"><!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+            <div class="container"><a class="navbar-brand" href="#hero">Dev<span>.</span></a> <button
+                    class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
+                        class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav><!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-pattern"></div>
+            <div class="hero-glow"></div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <div class="hero-badge"><i class="bi bi-circle-fill"></i> Available for Opportunities
+                            </div>
+                            <h1 class="hero-name" id="heroName">Alex Johnson</h1>
+                            <p class="hero-role" id="heroRole">Software Developer</p>
+                            <p class="hero-tagline" id="heroTagline">Passionate about building elegant solutions and
+                                turning complex problems into simple, beautiful interfaces.</p>
+                            <div class="hero-buttons"><a href="#contact" class="btn btn-primary-custom"> <i
+                                        class="bi bi-envelope me-2"></i>Contact Me </a> <a href="#projects"
+                                    class="btn btn-outline-custom"> <i class="bi bi-folder me-2"></i>View Projects </a>
+                            </div>
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">
+                                        5+
+                                    </div>
+                                    <div class="stat-label">
+                                        Projects
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">
+                                        10+
+                                    </div>
+                                    <div class="stat-label">
+                                        Technologies
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">
+                                        1+
+                                    </div>
+                                    <div class="stat-label">
+                                        Years Learning
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image-container">
+                            <div class="hero-image-frame">
+                                <div class="hero-image"><i class="bi bi-person-workspace"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- About Section -->
+        <section id="about" class="section section-dark">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 animate-on-scroll">
+                        <div class="about-content">
+                            <h2 class="section-title">About Me</h2>
+                            <p class="section-subtitle">Crafting digital experiences with passion and precision</p>
+                            <p class="about-text" id="aboutText">I'm a dedicated software developer with a strong
+                                foundation in computer science. Currently seeking opportunities to contribute to
+                                innovative projects while continuing to grow my skills in a professional environment.
+                            </p>
+                            <ul class="about-list">
+                                <li><i class="bi bi-check-circle-fill"></i> <span>Strong foundation in Data Structures
+                                        and Algorithms</span></li>
+                                <li><i class="bi bi-check-circle-fill"></i> <span>Passionate about clean code and best
+                                        practices</span></li>
+                                <li><i class="bi bi-check-circle-fill"></i> <span>Eager to learn and adapt to new
+                                        technologies</span></li>
+                                <li><i class="bi bi-check-circle-fill"></i> <span>Effective team player with good
+                                        communication skills</span></li>
+                            </ul><a href="#contact" class="btn btn-primary-custom"> <i
+                                    class="bi bi-chat-dots me-2"></i>Let's Connect </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 animate-on-scroll">
+                        <div class="about-image-container">
+                            <div class="about-image-box">
+                                <div style="text-align: center; padding: 3rem;"><i class="bi bi-code-slash"
+                                        style="font-size: 6rem; color: var(--accent-gold); opacity: 0.8;"></i>
+                                    <p style="color: var(--text-secondary); margin-top: 1.5rem; font-style: italic;">
+                                        "Code is poetry written in logic"</p>
+                                </div>
+                            </div>
+                            <div class="experience-badge">
+                                <div class="number">
+                                    CS
+                                </div>
+                                <div class="text">
+                                    Graduate
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="text-center mb-5 animate-on-scroll">
+                    <h2 class="section-title mx-auto">Technical Skills</h2>
+                    <p class="section-subtitle">Technologies and tools I work with</p>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="skill-category-title"><i class="bi bi-code-square me-2"></i>Programming Languages</h3>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                                    </svg>
+                                </div>
+                                <div class="skill-name">
+                                    Python
+                                </div>
+                                <div class="skill-level">
+                                    Proficient
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path
+                                            d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573" />
+                                        <path
+                                            d="M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118" />
+                                        <path
+                                            d="M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.889 4.832 0 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.189-7.627" />
+                                        <path
+                                            d="M9.734 23.924c4.322.277 10.959-.154 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639" />
+                                    </svg>
+                                </div>
+                                <div class="skill-name">
+                                    Java
+                                </div>
+                                <div class="skill-level">
+                                    Intermediate
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bi bi-filetype-js"></i>
+                                </div>
+                                <div class="skill-name">
+                                    JavaScript
+                                </div>
+                                <div class="skill-level">
+                                    Proficient
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bi bi-braces"></i>
+                                </div>
+                                <div class="skill-name">
+                                    C/C++
+                                </div>
+                                <div class="skill-level">
+                                    Intermediate
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bi bi-database"></i>
+                                </div>
+                                <div class="skill-name">
+                                    SQL
+                                </div>
+                                <div class="skill-level">
+                                    Intermediate
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bi bi-filetype-tsx"></i>
+                                </div>
+                                <div class="skill-name">
+                                    TypeScript
+                                </div>
+                                <div class="skill-level">
+                                    Learning
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="skill-category-title"><i class="bi bi-globe me-2"></i>Web Technologies</h3>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bi bi-filetype-html"></i>
+                                </div>
+                                <div class="skill-name">
+                                    HTML5
+                                </div>
+                                <div class="skill-level">
+                                    Proficient
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bi bi-filetype-css"></i>
+                                </div>
+                                <div class="skill-name">
+                                    CSS3
+                                </div>
+                                <div class="skill-level">
+                                    Proficient
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bi bi-bootstrap"></i>
+                                </div>
+                                <div class="skill-name">
+                                    Bootstrap
+                                </div>
+                                <div class="skill-level">
+                                    Proficient
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path
+                                            d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
+                                    </svg>
+                                </div>
+                                <div class="skill-name">
+                                    Tailwind
+                                </div>
+                                <div class="skill-level">
+                                    Intermediate
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bi bi-layout-text-window"></i>
+                                </div>
+                                <div class="skill-name">
+                                    REST APIs
+                                </div>
+                                <div class="skill-level">
+                                    Intermediate
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bi bi-filetype-json"></i>
+                                </div>
+                                <div class="skill-name">
+                                    JSON
+                                </div>
+                                <div class="skill-level">
+                                    Proficient
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="skill-category-title"><i class="bi bi-stack me-2"></i>Frameworks &amp; Tools</h3>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"
+                                        fill="currentColor">
+                                        <circle cx="12" cy="12" r="2.139" />
+                                        <ellipse cx="12" cy="12" rx="11" ry="4.2" fill="none" stroke="currentColor"
+                                            stroke-width="1" />
+                                        <ellipse cx="12" cy="12" rx="11" ry="4.2" fill="none" stroke="currentColor"
+                                            stroke-width="1" transform="rotate(60 12 12)" />
+                                        <ellipse cx="12" cy="12" rx="11" ry="4.2" fill="none" stroke="currentColor"
+                                            stroke-width="1" transform="rotate(120 12 12)" />
+                                    </svg>
+                                </div>
+                                <div class="skill-name">
+                                    React
+                                </div>
+                                <div class="skill-level">
+                                    Learning
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bi bi-hexagon"></i>
+                                </div>
+                                <div class="skill-name">
+                                    Node.js
+                                </div>
+                                <div class="skill-level">
+                                    Learning
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bi bi-git"></i>
+                                </div>
+                                <div class="skill-name">
+                                    Git
+                                </div>
+                                <div class="skill-level">
+                                    Proficient
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bi bi-github"></i>
+                                </div>
+                                <div class="skill-name">
+                                    GitHub
+                                </div>
+                                <div class="skill-level">
+                                    Proficient
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bi bi-code-square"></i>
+                                </div>
+                                <div class="skill-name">
+                                    VS Code
+                                </div>
+                                <div class="skill-level">
+                                    Proficient
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card">
+                                <div class="skill-icon"><i class="bi bi-terminal"></i>
+                                </div>
+                                <div class="skill-name">
+                                    Linux
+                                </div>
+                                <div class="skill-level">
+                                    Intermediate
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Projects Section -->
+        <section id="projects" class="section section-dark">
+            <div class="container">
+                <div class="text-center mb-5 animate-on-scroll">
+                    <h2 class="section-title mx-auto">Featured Projects</h2>
+                    <p class="section-subtitle">Showcasing my development journey</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                        <div class="project-card">
+                            <div class="project-image"><i class="bi bi-cart3"></i>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-category">
+                                    Full Stack
+                                </div>
+                                <h3 class="project-title">E-Commerce Platform</h3>
+                                <p class="project-description">A responsive e-commerce website with product catalog,
+                                    shopping cart, and user authentication features.</p>
+                                <div class="project-tech"><span class="tech-tag">HTML/CSS</span> <span
+                                        class="tech-tag">JavaScript</span> <span class="tech-tag">Python</span> <span
+                                        class="tech-tag">SQLite</span>
+                                </div>
+                                <div class="project-links"><a href="#" class="project-link"> <i
+                                            class="bi bi-github"></i>Code </a> <a href="#" class="project-link"> <i
+                                            class="bi bi-box-arrow-up-right"></i>Live Demo </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                        <div class="project-card">
+                            <div class="project-image"><i class="bi bi-clipboard-check"></i>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-category">
+                                    Web Application
+                                </div>
+                                <h3 class="project-title">Task Management App</h3>
+                                <p class="project-description">A productivity application for managing tasks with
+                                    features like categories, deadlines, and progress tracking.</p>
+                                <div class="project-tech"><span class="tech-tag">React</span> <span
+                                        class="tech-tag">CSS</span> <span class="tech-tag">LocalStorage</span>
+                                </div>
+                                <div class="project-links"><a href="#" class="project-link"> <i
+                                            class="bi bi-github"></i>Code </a> <a href="#" class="project-link"> <i
+                                            class="bi bi-box-arrow-up-right"></i>Live Demo </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                        <div class="project-card">
+                            <div class="project-image"><i class="bi bi-cloud-sun"></i>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-category">
+                                    API Integration
+                                </div>
+                                <h3 class="project-title">Weather Dashboard</h3>
+                                <p class="project-description">A weather application that displays current conditions
+                                    and forecasts using third-party weather APIs.</p>
+                                <div class="project-tech"><span class="tech-tag">JavaScript</span> <span
+                                        class="tech-tag">REST API</span> <span class="tech-tag">Bootstrap</span>
+                                </div>
+                                <div class="project-links"><a href="#" class="project-link"> <i
+                                            class="bi bi-github"></i>Code </a> <a href="#" class="project-link"> <i
+                                            class="bi bi-box-arrow-up-right"></i>Live Demo </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                        <div class="project-card">
+                            <div class="project-image"><i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-category">
+                                    Data Analysis
+                                </div>
+                                <h3 class="project-title">Stock Price Analyzer</h3>
+                                <p class="project-description">Python application for analyzing historical stock data
+                                    with visualization using matplotlib and pandas.</p>
+                                <div class="project-tech"><span class="tech-tag">Python</span> <span
+                                        class="tech-tag">Pandas</span> <span class="tech-tag">Matplotlib</span>
+                                </div>
+                                <div class="project-links"><a href="#" class="project-link"> <i
+                                            class="bi bi-github"></i>Code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                        <div class="project-card">
+                            <div class="project-image"><i class="bi bi-chat-dots"></i>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-category">
+                                    Networking
+                                </div>
+                                <h3 class="project-title">Chat Application</h3>
+                                <p class="project-description">Real-time chat application with multiple rooms, user
+                                    presence, and message history functionality.</p>
+                                <div class="project-tech"><span class="tech-tag">Java</span> <span
+                                        class="tech-tag">Socket.io</span> <span class="tech-tag">MySQL</span>
+                                </div>
+                                <div class="project-links"><a href="#" class="project-link"> <i
+                                            class="bi bi-github"></i>Code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                        <div class="project-card">
+                            <div class="project-image"><i class="bi bi-person-badge"></i>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-category">
+                                    Web Design
+                                </div>
+                                <h3 class="project-title">Portfolio Website</h3>
+                                <p class="project-description">This very portfolio you're viewing! Built with modern
+                                    design principles and responsive layout.</p>
+                                <div class="project-tech"><span class="tech-tag">HTML5</span> <span
+                                        class="tech-tag">CSS3</span> <span class="tech-tag">Bootstrap</span> <span
+                                        class="tech-tag">JavaScript</span>
+                                </div>
+                                <div class="project-links"><a href="#" class="project-link"> <i
+                                            class="bi bi-github"></i>Code </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="text-center mb-5 animate-on-scroll">
+                    <h2 class="section-title mx-auto">Experience</h2>
+                    <p class="section-subtitle">My professional journey so far</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="timeline animate-on-scroll">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content"><span class="timeline-date">Jan 2024 - Apr 2024</span>
+                                    <h3 class="timeline-title">Software Development Intern</h3>
+                                    <p class="timeline-company">TechStart Solutions</p>
+                                    <p class="timeline-description">Worked on developing and maintaining web
+                                        applications. Collaborated with the development team to implement new features
+                                        and fix bugs. Gained hands-on experience with agile methodologies and version
+                                        control systems.</p>
+                                    <ul
+                                        style="color: var(--text-secondary); margin-bottom: 1rem; padding-left: 1.25rem;">
+                                        <li>Developed responsive UI components using React and CSS</li>
+                                        <li>Participated in code reviews and team stand-ups</li>
+                                        <li>Assisted in database design and API integration</li>
+                                        <li>Wrote unit tests to ensure code quality</li>
+                                    </ul>
+                                    <div class="timeline-tech"><span class="tech-tag">React</span> <span
+                                            class="tech-tag">Node.js</span> <span class="tech-tag">PostgreSQL</span>
+                                        <span class="tech-tag">Git</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content"><span class="timeline-date">Jun 2023 - Aug 2023</span>
+                                    <h3 class="timeline-title">Web Development Intern</h3>
+                                    <p class="timeline-company">Digital Creatives Agency</p>
+                                    <p class="timeline-description">Created landing pages and updated existing websites
+                                        for clients. Learned about responsive design principles and SEO best practices.
+                                    </p>
+                                    <ul
+                                        style="color: var(--text-secondary); margin-bottom: 1rem; padding-left: 1.25rem;">
+                                        <li>Built 5+ responsive landing pages from design mockups</li>
+                                        <li>Implemented cross-browser compatible solutions</li>
+                                        <li>Optimized images and code for faster load times</li>
+                                    </ul>
+                                    <div class="timeline-tech"><span class="tech-tag">HTML5</span> <span
+                                            class="tech-tag">CSS3</span> <span class="tech-tag">JavaScript</span> <span
+                                            class="tech-tag">WordPress</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content"><span class="timeline-date">2022 - Present</span>
+                                    <h3 class="timeline-title">Freelance Projects</h3>
+                                    <p class="timeline-company">Self-Employed</p>
+                                    <p class="timeline-description">Working on personal and freelance projects to build
+                                        practical experience and expand my portfolio.</p>
+                                    <ul
+                                        style="color: var(--text-secondary); margin-bottom: 1rem; padding-left: 1.25rem;">
+                                        <li>Developed small business websites</li>
+                                        <li>Created automation scripts for data processing</li>
+                                        <li>Built personal projects to learn new technologies</li>
+                                    </ul>
+                                    <div class="timeline-tech"><span class="tech-tag">Python</span> <span
+                                            class="tech-tag">JavaScript</span> <span class="tech-tag">Bootstrap</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Education Section -->
+        <section id="education" class="section section-dark">
+            <div class="container">
+                <div class="text-center mb-5 animate-on-scroll">
+                    <h2 class="section-title mx-auto">Education</h2>
+                    <p class="section-subtitle">Academic background and qualifications</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-5 col-md-6 animate-on-scroll">
+                        <div class="education-card">
+                            <div class="education-icon"><i class="bi bi-mortarboard"></i>
+                            </div>
+                            <h3 class="education-degree">Bachelor of Science in Computer Science</h3>
+                            <p class="education-institution">State University of Technology</p>
+                            <p class="education-year">2020 - 2024</p>
+                            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;"><strong
+                                    style="color: var(--text-primary);">CGPA:</strong> 3.5/4.0<br><strong
+                                    style="color: var(--text-primary);">Relevant Coursework:</strong> Data Structures,
+                                Algorithms, Database Systems, Web Development, Software Engineering</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 animate-on-scroll">
+                        <div class="education-card">
+                            <div class="education-icon"><i class="bi bi-book"></i>
+                            </div>
+                            <h3 class="education-degree">Diploma in Computer Applications</h3>
+                            <p class="education-institution">Technical Institute</p>
+                            <p class="education-year">2018 - 2020</p>
+                            <hr style="border-color: var(--border-color); margin: 1rem 0;">
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;"><strong
+                                    style="color: var(--text-primary);">Grade:</strong> Distinction<br><strong
+                                    style="color: var(--text-primary);">Focus Areas:</strong> Programming Fundamentals,
+                                Computer Networks, System Administration</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center mt-4">
+                    <div class="col-lg-10">
+                        <div class="animate-on-scroll">
+                            <h3 class="skill-category-title text-center mb-4"><i
+                                    class="bi bi-patch-check me-2"></i>Certifications &amp; Courses</h3>
+                            <div class="row g-3">
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="skill-card">
+                                        <div class="skill-icon"><i class="bi bi-award"></i>
+                                        </div>
+                                        <div class="skill-name">
+                                            Python for Everybody
+                                        </div>
+                                        <div class="skill-level">
+                                            Coursera
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="skill-card">
+                                        <div class="skill-icon"><i class="bi bi-award"></i>
+                                        </div>
+                                        <div class="skill-name">
+                                            Web Development
+                                        </div>
+                                        <div class="skill-level">
+                                            freeCodeCamp
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="skill-card">
+                                        <div class="skill-icon"><i class="bi bi-award"></i>
+                                        </div>
+                                        <div class="skill-name">
+                                            JavaScript Algorithms
+                                        </div>
+                                        <div class="skill-level">
+                                            freeCodeCamp
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="skill-card">
+                                        <div class="skill-icon"><i class="bi bi-award"></i>
+                                        </div>
+                                        <div class="skill-name">
+                                            Git &amp; GitHub
+                                        </div>
+                                        <div class="skill-level">
+                                            Udemy
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="text-center mb-5 animate-on-scroll">
+                    <h2 class="section-title mx-auto">Get In Touch</h2>
+                    <p class="section-subtitle">Let's discuss opportunities and ideas</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-5 animate-on-scroll">
+                        <div class="contact-info-card">
+                            <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 1.5rem;">Contact
+                                Information</h3>
+                            <p style="color: var(--text-secondary); margin-bottom: 2rem;">Feel free to reach out. I'm
+                                always open to discussing new opportunities, projects, or just having a conversation
+                                about technology.</p>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="bi bi-envelope"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-label">
+                                        Email
+                                    </div>
+                                    <div class="contact-value" id="contactEmail"><a
+                                            href="mailto:alex.johnson@email.com">alex.johnson@email.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="bi bi-telephone"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-label">
+                                        Phone
+                                    </div>
+                                    <div class="contact-value" id="contactPhone"><a href="tel:+1234567890">+1 (234)
+                                            567-8900</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="bi bi-geo-alt"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-label">
+                                        Location
+                                    </div>
+                                    <div class="contact-value">
+                                        San Francisco, CA
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-links"><a href="#" class="social-link" title="LinkedIn" target="_blank"
+                                    rel="noopener noreferrer"> <i class="bi bi-linkedin"></i> </a> <a href="#"
+                                    class="social-link" title="GitHub" target="_blank" rel="noopener noreferrer"> <i
+                                        class="bi bi-github"></i> </a> <a href="#" class="social-link" title="Twitter"
+                                    target="_blank" rel="noopener noreferrer"> <i class="bi bi-twitter-x"></i> </a> <a
+                                    href="#" class="social-link" title="Instagram" target="_blank"
+                                    rel="noopener noreferrer"> <i class="bi bi-instagram"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 animate-on-scroll">
+                        <div class="contact-form-card">
+                            <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 1.5rem;">Send a Message
+                            </h3>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6"><label for="name" class="form-label">Your Name</label> <input
+                                            type="text" class="form-control" id="name" placeholder="John Doe" required>
+                                    </div>
+                                    <div class="col-md-6"><label for="email" class="form-label">Your Email</label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="john@example.com" required>
+                                    </div>
+                                    <div class="col-12"><label for="subject" class="form-label">Subject</label> <input
+                                            type="text" class="form-control" id="subject"
+                                            placeholder="How can I help you?">
+                                    </div>
+                                    <div class="col-12"><label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="5"
+                                            placeholder="Write your message here..." required></textarea>
+                                    </div>
+                                    <div class="col-12"><button type="submit" class="btn btn-primary-custom w-100"> <i
+                                                class="bi bi-send me-2"></i>Send Message </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="formMessage" class="form-message"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            Dev<span>.</span>
+                        </div>
+                        <p class="footer-text">Passionate software developer focused on creating elegant solutions and
+                            meaningful digital experiences.</p>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <h4 class="footer-title">More</h4>
+                        <ul class="footer-links">
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <h4 class="footer-title">Let's Connect</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem;">Open to new opportunities and
+                            collaborations. Feel free to reach out!</p>
+                        <div class="d-flex gap-2 mt-3"><a href="#" class="social-link" target="_blank"
+                                rel="noopener noreferrer"> <i class="bi bi-linkedin"></i> </a> <a href="#"
+                                class="social-link" target="_blank" rel="noopener noreferrer"> <i
+                                    class="bi bi-github"></i> </a> <a href="#" class="social-link" target="_blank"
+                                rel="noopener noreferrer"> <i class="bi bi-twitter-x"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="footer-copyright">© 2024 Alex Johnson. All rights reserved.</p>
+                    <div class="footer-social"><span style="color: var(--text-muted); font-size: 0.9rem;">Made with <i
+                                class="bi bi-heart-fill" style="color: var(--accent-gold);"></i> and code</span>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- Scroll to Top Button -->
+        <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+            <i class="bi bi-chevron-up"></i>
+        </button>
+    </div><!-- Bootstrap JS -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
