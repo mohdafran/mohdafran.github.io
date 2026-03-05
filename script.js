@@ -1,13 +1,13 @@
 // Configuration and Default Values
 const defaultConfig = {
-  developer_name: "Alex Johnson",
+  developer_name: "Mohd Afran",
   developer_role: "Software Developer",
   tagline:
     "Passionate about building elegant solutions and turning complex problems into simple, beautiful interfaces.",
   about_text:
     "I'm a dedicated software developer with a strong foundation in computer science. Currently seeking opportunities to contribute to innovative projects while continuing to grow my skills in a professional environment.",
-  email_address: "alex.johnson@email.com",
-  phone_number: "+1 (234) 567-8900",
+  email_address: "mohdafran7078@gmail.com",
+  phone_number: "+91 7454074580",
   primary_color: "#c9a962",
   secondary_color: "#0a0a0f",
   text_color: "#ffffff",

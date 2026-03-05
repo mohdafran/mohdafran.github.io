@@ -85,6 +85,7 @@ h6 {
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-color);
   padding: 1rem 0;
+  color: var(--text-primary);
   transition: var(--transition-normal);
 }
 
