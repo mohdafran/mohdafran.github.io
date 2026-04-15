@@ -278,7 +278,7 @@ function initContactForm() {
   const form = document.getElementById("contactForm");
   const formMessage = document.getElementById("formMessage");
 
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const name = document.getElementById("name").value.trim();
@@ -286,35 +286,47 @@ function initContactForm() {
     const subject = document.getElementById("subject").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    // Simple validation
     if (!name || !email || !message) {
       formMessage.className = "form-message error";
-      formMessage.innerHTML =
-        '<i class="bi bi-exclamation-circle me-2"></i>Please fill in all required fields.';
+      formMessage.innerHTML = "Please fill all required fields";
       return;
     }
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      formMessage.className = "form-message error";
-      formMessage.innerHTML =
-        '<i class="bi bi-exclamation-circle me-2"></i>Please enter a valid email address.';
-      return;
-    }
-
-    // Simulate form submission success
-    formMessage.className = "form-message success";
-    formMessage.innerHTML =
-      '<i class="bi bi-check-circle me-2"></i>Thank you! Your message has been sent successfully. I\'ll get back to you soon.';
-
-    // Reset form
-    form.reset();
-
-    // Hide message after 5 seconds
-    setTimeout(() => {
+    try {
       formMessage.className = "form-message";
-    }, 5000);
+      formMessage.innerHTML = "Sending...";
+
+      const response = await fetch(
+        "https://sendmail-h75t.onrender.com/send-mail",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            subject,
+            message,
+          }),
+        },
+      );
+
+      const data = await response.json();
+
+      if (data.success) {
+        formMessage.className = "form-message success";
+        formMessage.innerHTML = "Message sent successfully 🚀";
+
+        form.reset();
+      } else {
+        throw new Error(data.error || "Something went wrong");
+      }
+    } catch (error) {
+      formMessage.className = "form-message error";
+      formMessage.innerHTML = "Failed to send message ❌";
+      console.log(error);
+    }
   });
 }
 
