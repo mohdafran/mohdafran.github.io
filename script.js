@@ -329,14 +329,6 @@ function initContactForm() {
     }
   });
 }
-
-// // Initialize Everything
-// initElementSDK();
-// applyConfig();
-// initNavigation();
-// initScrollToTop();
-// initScrollAnimations();
-// initContactForm();
 document.addEventListener("DOMContentLoaded", function () {
   initElementSDK();
   applyConfig();

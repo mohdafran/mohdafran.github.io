@@ -271,7 +271,9 @@ h6 {
   border-radius: 20px;
   opacity: 0.3;
 }
-
+.hero-image-frame img {
+  border-radius: 5%;
+}
 .hero-image {
   width: 100%;
   height: auto;
